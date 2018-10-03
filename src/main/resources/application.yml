@@ -1,0 +1,62 @@
+spring:
+  profiles: default
+
+alfresco:
+  url: "http://aoaapls00036.nbcuni.ge.com:8011/alfresco/api/-default-/cmis/versions/1.1/atom"
+  userName: cherlin
+  password: password
+  connectionName: test
+  fileDescption: File created from test automation
+  
+notification:
+  email:
+    recipient: Mohammed.AmmarM@nbcuni.com
+    sender: kodadaiah.d-p@capgemini.com
+    message: Client Performance liability has been updteed to next quarter!
+    subject:  CP liabliaty updated  
+  
+mail:
+  utility:
+    url: https://mailing-utility.devaoa.inbcu.com/mail  
+  
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+    
+    
+---
+
+spring:
+  profiles: dev
+
+alfresco:
+  url: "http://aoaapls00036.nbcuni.ge.com:8011/alfresco/api/-default-/cmis/versions/1.1/atom"
+  userName: cherlin
+  password: password
+  connectionName: test
+  folderPath: "/CI/Test-ammar"
+  fileDescption: File created from test automation
+  
+notification:
+  email:
+    recipient: Mohammed.AmmarM@nbcuni.com
+    sender: kodadaiah.d-p@capgemini.com
+    message: Client Performance liability has been updteed to next quarter!
+    subject:  CP liabliaty updated  
+  
+mail:
+  utility:
+    url: https://mailing-utility.devaoa.inbcu.com/mail  
+  
+security:
+  basic:
+    enabled: false
+management:
+  security:
+    enabled: false
+    
+    
+---
